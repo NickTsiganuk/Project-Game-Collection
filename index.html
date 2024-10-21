@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Board Games Collection</title>
+  </head>
+  <body>
+    <header>
+      <h1>Board Games Collection</h1>
+    </header>
+    <main>
+      <section class="collections__control">
+        <form class="collections__form">
+          <input placeholder="Game title" class="form-input" />
+          <button type="button" class="form-button">Add</button>
+        </form>
+        <div class="collections__info">
+          <h2>Collection info</h2>
+          <form id="check__form">
+            <label for="#collections__info-input"
+              >Check if the game is in collection</label
+            >
+            <input
+              placeholder="Game title"
+              id="collections__info-check-input"
+            />
+            <button type="button" id="collections__info-check-button">
+              Check
+            </button>
+          </form>
+          <p id="collections__info-amount">Total Games in collection:</p>
+          <p id="collections__info-base-amount">Base-Games in collection:</p>
+          <p id="collections__info-exp-amount">Expansions in collection:</p>
+        </div>
+      </section>
+      <section class="collections"></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
